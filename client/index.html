@@ -59,11 +59,15 @@
         </tfoot>
     </table>
     <script src="js/app/models/Negociacao.js"></script>
+    <script src="js/app/models/Calopsita.js"></script>
+    <script src="js/app/models/Pessoa.js"></script>
     <script>
         var n1 = new Negociacao(new Date(),10,200.15);
-        console.log(n1);
-        n1.data.setDate(14);
-        console.log(n1);
+        console.log(n1.coco);
+        var animal = new Calopsita("Filó","Pássaro");
+        console.log(animal);
+        var pessoa = new Pessoa("Nahara", "Romana");
+        console.log(pessoa.nomeCompleto);
     </script>
 </body>
 </html>
