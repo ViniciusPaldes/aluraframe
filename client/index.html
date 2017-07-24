@@ -11,7 +11,7 @@
     
     <h1 class="text-center">Negociações</h1>
     
-    <form class="form">
+    <form class="form" onsubmit="negociacaoController.adiciona(event)">
         
         <div class="form-group">
             <label for="data">Data</label>
@@ -59,15 +59,9 @@
         </tfoot>
     </table>
     <script src="js/app/models/Negociacao.js"></script>
-    <script src="js/app/models/Calopsita.js"></script>
-    <script src="js/app/models/Pessoa.js"></script>
+    <script src="js/app/controllers/NegociacaoController.js"></script>
     <script>
-        var n1 = new Negociacao(new Date(),10,200.15);
-        console.log(n1.coco);
-        var animal = new Calopsita("Filó","Pássaro");
-        console.log(animal);
-        var pessoa = new Pessoa("Nahara", "Romana");
-        console.log(pessoa.nomeCompleto);
+        let negociacaoController = new NegociacaoController();
     </script>
 </body>
 </html>
