@@ -13,6 +13,10 @@ class NegociacaoController{
         console.log(this._inputData.value.split("-"));
         console.log(...this._inputData.value.split("-"));
         let negociacao = new Negociacao(new Date(this._inputData.value.split("-")),this._inputQuantidade.value,this._inputValor.value);
-        console.log(negociacao);
+
+        let dataHelper = new DateHelper();
+        console.log(dataHelper.dataParaTexto(new Date()));
+        console.log(dataHelper.textoParaData(this._inputData.value));
+        
     }
 }
