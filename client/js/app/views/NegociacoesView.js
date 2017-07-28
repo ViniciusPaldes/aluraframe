@@ -1,8 +1,4 @@
-class NegociacoesView {
-    
-    constructor (elemento) {
-        this._elemento = elemento;
-    }
+class NegociacoesView extends View{
     
     _template(model) {
         return `
@@ -33,19 +29,5 @@ class NegociacoesView {
             </tfoot>
         </table>`
     }
-
-    update(model) {
-        this._elemento.innerHTML = this._template(model);
-    }
-
-    qualquerCoisa() {
-        let dobro = numeros.map(num=>num * 2);
-        let metade = numeros.map(num=>num/2);
-        let raiz = numeros.map(num=>Math.sqrt(num));
-    }
-
-    
-
-
 }
     
